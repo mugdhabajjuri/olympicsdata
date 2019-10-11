@@ -9,10 +9,10 @@ Steps followed
     - Install cookiecutter. Use the command 
     
     
-        <span style="color:pink"> *pip install cookiecutter* </span>
+          pip install cookiecutter
    - Run the command from terminal
      
-          *cookiecutter https://github.com/drivendata/cookiecutter-data-science*
+          cookiecutter https://github.com/drivendata/cookiecutter-data-science
 
 Datasets considered here are **"Olympics data"** and **"World population"**
 

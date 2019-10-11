@@ -187,19 +187,7 @@ olympic_data.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-   .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-   .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -461,19 +449,7 @@ df2.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-   .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-   .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -621,7 +597,7 @@ df3.head()
 </div>
 
 
-##Combining the datasets
+## Combining the datasets
 
 Here we are combining the datasets using merge function on the common column **country**.
 
@@ -760,7 +736,7 @@ df4.head()
 
 <div>
 
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -852,6 +828,8 @@ fig.show()
         require.undef("plotly");
         define('plotly', function(require, exports, module) {
             /**
+
+
 * plotly.js v1.49.1
 * Copyright 2012-2019, Plotly, Inc.
 * All rights reserved.
@@ -879,7 +857,7 @@ plt.show()
 ```
 
 
-![png](output_30_0.png)
+![png](reports/output_30_0.png)
 
 
 

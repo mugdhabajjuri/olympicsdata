@@ -16,9 +16,9 @@ Path to Population data --> /data/external/population2.csv
 
 Raw data collected from :-
 
-    - athelet_events.csv is taken from [here](https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results#athlete_events.csv) - Kaggle
+  - athelet_events.csv is taken from [here](https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results#athlete_events.csv) - Kaggle
 
-    - population2.csv is taken from [here](https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)) - Wikipedia
+  - population2.csv is taken from [here](https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)) - Wikipedia
     
 Data exploration and Basic Hygiene :
 

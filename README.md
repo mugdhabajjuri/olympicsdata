@@ -698,6 +698,7 @@ df4.dtypes
     D               float64
     dtype: object
 
+## Data transformation
 
 Here Population is of datatype Object, to perform caclulation on it we have to change the type.
 
@@ -810,6 +811,9 @@ df4['D'].max()
 
 
     0.051375727822810816
+    
+    
+## Visualization
 
 Here, we have a pie chart which dhows the occupancy of participants from a country towards total occupancy.
 

@@ -3,18 +3,22 @@
 This project is a part of course EECS731. In this project we will try to combine two datasets to establish additional value.
 
 This project structure is cloned from [Cookiecutter](https://drivendata.github.io/cookiecutter-data-science/)
-<--
+
 
 Steps followed 
     - Install cookiecutter. Use the command 
+    
+    
         <span style="color:pink"> *pip install cookiecutter* </span>
-    - Run the command from terminal
-        *cookiecutter https://github.com/drivendata/cookiecutter-data-science*
-Datasets considered here are "Olympics data" and "World population"
+   - Run the command from terminal
+     
+          *cookiecutter https://github.com/drivendata/cookiecutter-data-science*
 
-Path to Olympic data --> /data/external/athlete_events.csv
+Datasets considered here are **"Olympics data"** and **"World population"**
 
-Path to Population data --> /data/external/population2.csv
+Path to Olympic data > /data/external/athlete_events.csv
+
+Path to Population data > /data/external/population2.csv
 
 Raw data collected from :-
 

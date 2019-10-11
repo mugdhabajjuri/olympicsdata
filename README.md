@@ -5,20 +5,19 @@ This project is a part of course EECS731. In this project we will try to combine
 This project structure is cloned from [Cookiecutter](https://drivendata.github.io/cookiecutter-data-science/)
 
 
-Steps followed 
-    - Install cookiecutter. Use the command 
+Steps followed are :
+   - Installing cookiecutter. Run the command 
     
-    
-          pip install cookiecutter
-   - Run the command from terminal
-     
-          cookiecutter https://github.com/drivendata/cookiecutter-data-science
+    pip install cookiecutter
+   - Then, run the below command from terminal to load the project structure
+
+    cookiecutter https://github.com/drivendata/cookiecutter-data-science
 
 Datasets considered here are **"Olympics data"** and **"World population"**
 
-Path to Olympic data > /data/external/athlete_events.csv
+Path to Olympic data --> /data/external/athlete_events.csv
 
-Path to Population data > /data/external/population2.csv
+Path to Population data --> /data/external/population2.csv
 
 Raw data collected from :-
 
@@ -26,7 +25,7 @@ Raw data collected from :-
 
   - population2.csv is taken from [here](https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)) - Wikipedia
     
-Data exploration and Basic Hygiene :
+## Data exploration and Basic Hygiene :
 
 
 
@@ -52,9 +51,6 @@ olympic_data.shape
 ```python
 olympic_data.head()
 ```
-
-
-
 
 <div>
 <style scoped>

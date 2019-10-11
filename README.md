@@ -818,11 +818,15 @@ df4['D'].max()
 import plotly.graph_objects as go
 fig = go.Figure(data=[go.Pie(labels=df4['Country'], values=df4['participants'], hole=.3)])
 fig.show()
+```
+![png](reports/pie1.png)
 
+```
 fig2 = go.Figure(data=[go.Pie(labels=df4['Country'], values=df4['Population'], hole=.3)])
 fig2.show()
 
 ```
+![png](reports/pie2.png)
 
 ```python
 import seaborn as sns

@@ -818,24 +818,11 @@ df4['D'].max()
 import plotly.graph_objects as go
 fig = go.Figure(data=[go.Pie(labels=df4['Country'], values=df4['participants'], hole=.3)])
 fig.show()
+
+fig2 = go.Figure(data=[go.Pie(labels=df4['Country'], values=df4['Population'], hole=.3)])
+fig2.show()
+
 ```
-
-
-        <script type="text/javascript">
-        window.PlotlyConfig = {MathJaxConfig: 'local'};
-        if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
-        if (typeof require !== 'undefined') {
-        require.undef("plotly");
-        define('plotly', function(require, exports, module) {
-            /**
-
-
-* plotly.js v1.49.1
-* Copyright 2012-2019, Plotly, Inc.
-* All rights reserved.
-* Licensed under the MIT license
-*/
-
 
 ```python
 import seaborn as sns

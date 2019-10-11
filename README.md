@@ -171,7 +171,7 @@ olympic_data.head()
 </div>
 
 
-
+Dropping columns which aren't required 
 
 ```python
 to_drop = ['ID','Name', 'Height', 'Weight', 'NOC', 'Games', 'Season', 'Event']
@@ -288,7 +288,7 @@ olympic_data.dtypes
     dtype: object
 
 
-
+Filtering the dataframe to year "2016"
 
 ```python
 df = olympic_data[olympic_data.Year == 2016]
@@ -303,19 +303,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-   .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-   .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -397,12 +385,13 @@ df.shape
     (13688, 7)
 
 
-
+Grouping by team to find out the number of participants from each country.
 
 ```python
 countries = df.groupby('Team')
 ```
 
+here, we are Size() to find out the number of participants and giving the index name 'participants' to the newly formed column
 
 ```python
 df2 = countries.size().reset_index(name='participants')
@@ -417,19 +406,7 @@ df2.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-   .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-   .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -536,7 +513,7 @@ df2.head()
 </div>
 
 
-
+Considering the second dataset 'population' and performing basic cleanup
 
 ```python
 df3 = pd.read_csv('/Users/mugdhabajjuri/DataScience1/data/external/population2.csv')
@@ -549,19 +526,7 @@ df3.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-   .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-   .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -616,19 +581,7 @@ df3.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-   .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-   .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -668,6 +621,9 @@ df3.head()
 </div>
 
 
+##Combining the datasets
+
+Here we are combining the datasets using merge function on the common column **country**.
 
 
 ```python
@@ -683,19 +639,7 @@ df4.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-   .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-   .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -741,11 +685,13 @@ df4.head()
 </div>
 
 
+Now, our aim is to find out the percentage of population participated in the olympics in the year 2016.
 
 
 ```python
 df4.dtypes
 ```
+
 
 
 
@@ -756,7 +702,7 @@ df4.dtypes
     dtype: object
 
 
-
+Created Column **'D'** to store the percentage values.
 
 ```python
 df4["D"] = np.nan
@@ -777,7 +723,7 @@ df4.dtypes
     dtype: object
 
 
-
+Here Population is of datatype Object, to perform caclulation on it we have to change the type.
 
 ```python
 df4['Population'] = df4['Population'].str.replace(',','').astype(np.float64)
@@ -797,7 +743,7 @@ df4.dtypes
     D               float64
     dtype: object
 
-
+Calculating the pecentage of population took part in the olympics
 
 
 ```python
@@ -813,18 +759,7 @@ df4.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-   .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-   .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>

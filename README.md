@@ -698,6 +698,7 @@ df4.dtypes
     D               float64
     dtype: object
 
+## Data transformation
 
 Here Population is of datatype Object, to perform caclulation on it we have to change the type.
 
@@ -810,19 +811,30 @@ df4['D'].max()
 
 
     0.051375727822810816
+    
+    
+## Visualization
 
-
+Here, we have a pie chart which dhows the occupancy of participants from a country towards total occupancy.
 
 
 ```python
 import plotly.graph_objects as go
 fig = go.Figure(data=[go.Pie(labels=df4['Country'], values=df4['participants'], hole=.3)])
 fig.show()
+```
+![png](reports/pie1.png)
 
+This pie chart shows the Population of different countries
+
+```
 fig2 = go.Figure(data=[go.Pie(labels=df4['Country'], values=df4['Population'], hole=.3)])
 fig2.show()
 
 ```
+![png](reports/pie2.png)
+
+Here, We are showing USA's rate of participation in the Olympics. We can give different country values to 'data.Team' and find out all the countries participation rate in all the years.
 
 ```python
 import seaborn as sns
